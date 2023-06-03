@@ -1,28 +1,31 @@
-# C - Binary trees
+				BINARY TREES
+Trees are simply nodes connected together.
+Binary tree is a kind of data structure used for storage purposes.
+Each node of a binary tree can only have a maximum of two nodes called the children.
+A simple binary tree consists of the ROOT, PATH AND CHILD nodes.
+The root node is the node at the top of the tree. A tree can only have one root node and one path from the root node to any other node.
+The path is the sequence of nodes along the edges of a tree.
+The child node is the node below a given node connected by its edge downward.
+The child node is of two types - The LEFTCHILD and The RIGHTCHILD.
+According to the Binary Search Tree Representation the rightchild node is the node with its value greater than the value of its parent node.
+Meanwhile the Parent node is any node except the root node with one edge upward. Leaf node is the node without any child node, that is, the last or tail node at the end of every binary tree.
+Subtree is the descendants of a node.
+Visiting is all about checking the value of a node when control is on the node.
+Traversing is all about passing through nodes in a specific order.
 
-## Projects
+Binary Search Tree(BST) has basic operations which include:
+Insert: inserting an element in a tree or creating a tree.
+Search: searching for an element in a tree.
+Preorder Traversal: traversing a tree in a pre-order way.
+Inorder Traversal: traversing a tree in an in-order way.
+Postorder Traversal: traversing a tree in a post-order way.
 
-| Project name | Description |
-| ------------ | ----------- |
-| [`0-binary_tree_node.c`](0-binary_tree_node.c) |  A function that creates a binary tree node|
-| [`1-binary_tree_insert_left.c`](01-binary_tree_insert_left.c) |  A function that inserts a node as the left-child of another node|
-| [`2-binary_tree_insert_right.c`](2-binary_tree_insert_right.c) | A function that inserts a node as the right-child of another node|
-| [`3-binary_tree_delete.c`](3-binary_tree_delete.c) | A function that deletes an entire binary tree|
-| [`4-binary_tree_is_leaf.c`](4-binary_tree_is_leaf.c) | A function that checks if a node is a leaf|
-| [`5-binary_tree_is_root.c`](5-binary_tree_is_root.c) | A function that checks if a node is a root|
-| [`6-binary_tree_preorder.c`](6-binary_tree_preorder.c) | A function that goes through a binary tree using pre-order traversal|
-| [`7-binary_tree_inorder.c`](7-binary_tree_inorder.c) | A function that goes through a binary tree using in-order traversal|
-| [`8-binary_tree_postorder.c`](8-binary_tree_postorder.c) | function that goes through a binary tree using post-order traversal |
-| [`9-binary_tree_height.c`](9-binary_tree_height.c) | A function that measures the height of a binary tree |
-| [`10-binary_tree_depth.c`](10-binary_tree_depth.c) | A function that measures the depth of a node in a binary tree |
-| [`11-binary_tree_size.c`](11-binary_tree_size.c) | A function that measures the size of a binary tree |
-| [`12-binary_tree_leaves.c`](12-binary_tree_leaves.c) | function that counts the leaves in a binary tree |
-| [`13-binary_tree_nodes.c`](13-binary_tree_nodes.c) | function that counts the nodes with at least 1 child in a binary tree |
-| [`14-binary_tree_balance.c`](14-binary_tree_balance.c) | function that measures the balance factor of a binary tree |
-| [`15-binary_tree_is_full.c`](15-binary_tree_is_full.c) | function that checks if a binary tree is full |
-| [`16-binary_tree_is_perfect.c`](16-binary_tree_is_perfect.c) | function that checks if a binary tree is perfect |
-| [`17-binary_tree_sibling.c`](17-binary_tree_sibling.c) | function that finds the sibling of a node |
-| [`18-binary_tree_uncle.c`](18-binary_tree_uncle.c) | function that finds the uncle of a node |
-| [`100-binary_trees_ancestor.c`](100-binary_trees_ancestor.c) | A function that finds the lowest common ancestor of two nodes |
-| [`101-binary_tree_levelorder.c`](101-binary_tree_levelorder.c) | function that goes through a binary tree using level-order traversal |
-| [`102-binary_tree_is_complete.c`](102-binary_tree_is_complete.c) | function that checks if a binary tree is complete |
+Insert Operation: The first insert operation in a tree is to create a tree. To insert an element in a tree first locate its location. Search from the root node and if the value you are looking for is less than the root node value, search for the empty location in the left subtree or node and insert the data or element. Otherwise, search for the empty location in the right subtree or node and insert the element or data.
+
+Search Operation: To perform a search for an element in a tree, start from the root node. If the value of the element being searched for is less than the that of the root node search for the element in the left subtree or node. Otherwise, search for the elment in the right subtree or node.
+
+Preorder Traversal: This type of traversal method is a situation whereby the root node is visited first, then the left subtree or node and finally to the right subtree or node.
+
+Inorder Operation: This type of traversal method is a situation whereby the left subtree or node is visited first, then the root node and finally the right subtree or node.
+
+Postorder Operation: This type of traversal method is a situation whereby the left subtree or node is visited first, then the right subtree or node and finally the root.
